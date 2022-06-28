@@ -1,0 +1,139 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ footer, header {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font: 16px/28px arial, sans-serif;
+    background-color: gainsboro;
+    color: #333;
+
+}
+
+.container{
+    width: 800px;
+    margin:auto;
+    background-color: #fff;
+}
+
+.header{
+    padding :20px;
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header ul li{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.header a{
+    text-decoration: none;
+    color: blue;
+    padding: 10px;
+}
+
+.header a:hover{
+    background-color: lightskyblue;
+    color: white;
+}
+
+.hero{
+    height: 350px;
+    background-image: url(img/hero.jpg);
+    background-size: cover;
+    border-top: 5px solid lightskyblue;
+    border-bottom: 5px solid lightskyblue;
+}
+
+.content{
+    padding: 20px;
+    min-height: 90px;
+    margin-top: 20px;
+}
+
+.content h2{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content p{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.footer{
+    background-color: #333;
+    padding: 10px;
+}
+
+.footer .copy{
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
+}
+
+.content #waktu{
+    background-color:seashell;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+/* .content #username{
+
+} */
+
+.content label{
+    margin-left: 230px;
+}
+
+.content #pass{
+    margin-left: 4px;
+    margin-top: 10px;
+}
+
+.content button{
+    margin-top: 8px;
+    margin-left: 435px;
+}

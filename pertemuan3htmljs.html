@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML dan Javascript</title>
+</head>
+<body>
+    <p id="hasil"> </p>
+    <p id="bhs_pemrog"></p>
+    <button onclick="document.getElementById('coba').innerHTML =Date();">Get Time Now</button>
+    <p id="coba"></p>
+    <button onclick="urut();"()>Sort Array</button>
+    <p id="arraySort"></p>
+
+    <br><br>
+
+    <h3>INPUT DATA</h3>
+    Nilai <input type="text" id="val">
+    <button onclick="inputData();"> Submit</button>
+    <p id="showInputData"></p>
+
+    <br><br>
+    <h3>LOGIN SEDERHANA</h3>
+    Username <input type="text" id="username">
+    Password <input type="password" id="pass">
+    <button onclick="login();">Log in</button>
+
+
+    <script>
+        var a=3;
+        var b=5;
+        var hasil=a +b;
+        // document.getElementById("hasil").innerHTML= a + b;
+        document.getElementById("hasil").innerHTML = "hasil dari " + a +"+" + b + " adalah " + hasil;
+
+
+        var bahasa_pemrog = {web:"HTML", android:"Java", desktop:"Java"};
+        document.getElementById("bhs_pemrog").innerHTML= bahasa_pemrog.web;
+
+        var bahasa = ["python", "java", "C++", "Javascript"];
+
+        function urut(){
+            
+            document.getElementById("arraySort").innerHTML=bahasa.sort();
+        }
+
+        function inputData(){
+            var x= document.getElementById("val").value;
+            document.getElementById("showInputData").innerHTML=x;
+        }
+
+        function login(){
+            var username = document.getElementById("username").value;
+            var pass = document.getElementById("pass").value;
+
+            if (username == "admin" && pass =="admin"){
+                window.location="file:///E:/KIKI/4SC6/HTML/pertemuan2.html";
+
+            }else{
+                alert ("Username atau pasword salah!");
+            }
+        }
+    </script>
+</body>
+</html>
